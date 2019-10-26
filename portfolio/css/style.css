@@ -46,8 +46,7 @@ SAIDBAR, MAIN MENU STYLE:
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Roboto';
-	font-size: 30px;
+	font-family: 'Roboto';	font-size: 30px;
 	background: white;
 	position: absolute;
 	top: 0;
@@ -314,6 +313,7 @@ MAINBLOCK, BLOG PAGE POSTS STYLE:
 	width: 100%;
 	margin-top: 20px;
 	transition: transform 1s;
+	position: relative;
 
 }
 .postBox:hover {
@@ -321,6 +321,20 @@ MAINBLOCK, BLOG PAGE POSTS STYLE:
 	position: relative;
 	z-index: 10;
 	margin-bottom: 0;
+}
+.postBox__blackout{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: #31bcba;
+	opacity: 0.7;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.postBox:hover .postBox__blackout{
+	display: flex;
 }
 
 /*post standart style:*/
